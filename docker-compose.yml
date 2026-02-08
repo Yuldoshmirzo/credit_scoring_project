@@ -1,0 +1,43 @@
+services:
+  credit-scoring:
+    build: .
+    container_name: credit-scoring-ml
+    volumes:
+      - .:/app
+      - ./artifacts:/app/artifacts
+      - ./mlruns:/app/mlruns
+      - ./data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+    ports:
+      - "8000:8000"  # FastAPI
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+
+  mlflow:
+    build: .
+    container_name: mlflow-server
+    volumes:
+      - ./mlruns:/app/mlruns
+      - ./mlartifacts:/app/mlartifacts
+    ports:
+      - "5001:5000"  # MLflow UI on 5001
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+    command: mlflow ui --host 0.0.0.0 --port 5000 --backend-store-uri sqlite:////app/mlruns/mlflow.db --default-artifact-root /app/mlartifacts
+
+  api:
+    build: .
+    container_name: credit-scoring-api
+    volumes:
+      - .:/app
+      - ./artifacts:/app/artifacts
+    ports:
+      - "8001:8000"  # Map container 8000 to host 8001 to avoid conflicts
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+    command: uvicorn Api.main:app --host 0.0.0.0 --port 8000 --reload

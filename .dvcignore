@@ -1,0 +1,36 @@
+# DVC ignore file - patterns to skip during DVC tracking
+
+# Version control
+.git
+.gitignore
+.hg
+
+# IDE & Editors
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python
+__pycache__
+*.py[cod]
+.pytest_cache
+.venv
+venv
+env
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# DVC files
+.dvc
+.dvc/cache
+.dvc/tmp
+
+# Virtual environments
+scoringenv
+ENV
