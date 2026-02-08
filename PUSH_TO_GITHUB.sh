@@ -39,10 +39,10 @@ echo "Visit: https://github.com/$USERNAME/credit-scoring-ml"
 # ============================================
 
 # Create local DVC storage directory
-mkdir -p /Users/yuldashev/Desktop/dvc-storage
+mkdir -p /path/to/dvc-storage
 
 # Add DVC remote
-dvc remote add -d myremote /Users/yuldashev/Desktop/dvc-storage
+dvc remote add -d myremote /path/to/dvc-storage
 
 # Push DVC-tracked data
 dvc push
