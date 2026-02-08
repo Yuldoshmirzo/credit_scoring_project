@@ -78,7 +78,7 @@ git push -u origin main
 
 ```bash
 # Full setup with DVC remote
-cd "path/to/Kaggle project/credit_scoring_project"
+cd "path/to/credit_scoring_project"
 
 # GitHub setup
 git remote add origin https://github.com/YOUR_USERNAME/credit-scoring-ml.git
