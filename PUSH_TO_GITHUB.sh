@@ -12,7 +12,7 @@ USERNAME="YOUR_USERNAME"  # Replace with your GitHub username
 # Step 2: Run these commands one by one
 # ============================================
 
-cd "/Users/yuldashev/Desktop/Kaggle project/credit_scoring_project"
+cd "path/to/credit_scoring_project"
 
 # Add remote repository
 git remote add origin https://github.com/$USERNAME/credit-scoring-ml.git
