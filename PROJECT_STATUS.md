@@ -50,12 +50,12 @@
 ```bash
 # 1. Edit PUSH_TO_GITHUB.sh and replace YOUR_USERNAME
 # 2. Run:
-bash "/Users/yuldashev/Desktop/Kaggle project/credit_scoring_project/PUSH_TO_GITHUB.sh"
+bash "/path/to/credit_scoring_project/PUSH_TO_GITHUB.sh"
 ```
 
 ### Option 2: Manual Commands
 ```bash
-cd "/Users/yuldashev/Desktop/Kaggle project/credit_scoring_project"
+cd "/path/to/credit_scoring_project"
 
 # 1. Create repo on GitHub: https://github.com/new
 #    Name: credit-scoring-ml
