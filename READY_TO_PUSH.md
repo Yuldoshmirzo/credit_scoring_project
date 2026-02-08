@@ -66,7 +66,7 @@
 #    - Do NOT initialize with README
 
 # 2. Copy your username below and paste in terminal:
-cd "/Users/yuldashev/Desktop/Kaggle project/credit_scoring_project"
+cd "path/to/credit_scoring_project"
 git remote add origin https://github.com/YOUR_USERNAME/credit-scoring-ml.git
 git branch -M main
 git push -u origin main
@@ -78,7 +78,7 @@ git push -u origin main
 
 ```bash
 # Full setup with DVC remote
-cd "/Users/yuldashev/Desktop/Kaggle project/credit_scoring_project"
+cd "path/to/Kaggle project/credit_scoring_project"
 
 # GitHub setup
 git remote add origin https://github.com/YOUR_USERNAME/credit-scoring-ml.git
