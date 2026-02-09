@@ -29,8 +29,7 @@
 
 ### Step 2: Add Remote and Push
 
-```bash
-cd "/Users/yuldashev/Desktop/Kaggle project/credit_scoring_project"
+```/path/to/credit_scoring_project"
 
 # Add the remote (replace YOUR_USERNAME with your GitHub username)
 git remote add origin https://github.com/YOUR_USERNAME/credit-scoring-ml.git
