@@ -51,8 +51,8 @@ For proper data versioning, set up a remote storage:
 dvc remote add -d myremote /tmp/dvc-storage
 
 # Or use local storage for testing
-dvc remote add -d myremote /Users/yuldashev/Desktop/dvc-storage
-mkdir -p /Users/yuldashev/Desktop/dvc-storage
+dvc remote add -d myremote /path/to/dvc-storage
+mkdir -p /path/to/dvc-storage
 
 # Push DVC data
 dvc push
